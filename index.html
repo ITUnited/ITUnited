@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            animation: changeColor 5s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: #f0f0f0;
+            }
+            50% {
+                background-color: #ffcc00;
+            }
+            100% {
+                background-color: #f0f0f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to ITUNited</h1>
+</body>
+</html>
