@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ITUnited</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: changeColor 5s infinite alternate;
+        }
+
+        header{
+            animation: changeColor 5s infinite alternate;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .contact-info img {
+            max-width: 50%;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .contact-links {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-links ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: black;
+             }
+            50% {
+                background-color: #D6DA31;
+             }
+            100% {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="events.html">Events</a></p>
+        <p><a href="contact.html">Contact</a></p>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <img src="files/contactimg.png">
+            <div class="contact-links">
+                <h2>Contact</h2>
+                <h2 style="font-size: smaller;">Feel free to reach out and connect via our other platforms :)</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Visit us on Facebook</a></li>
+                    <li><a href="https://www.instagram.com/itunited_/">Follow us on Instagram</a></li>
+                    <li><a href="https://discord.gg/PrKa3Rdj">Join our Discord</a></li>
+                    <li><a href="mailto:info@example.com">For any general inquiries: itunitedcph@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ITUnited. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+</html>

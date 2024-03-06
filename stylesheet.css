@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+header a {
+    color: #D6DA31;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center; /* Center the text */
+    width: 100px; /* Adjust as needed */
+}
+header p{
+    transition-duration: 1s;
+    cursor: grab;
+}
+header p :hover{
+    color: white;
+    text-shadow: 1px 1px 10px rgba(214, 218, 49,0.9);
+}
+
+.section1 {
+    text-align: center;
+    padding-top: 50px; /* Adjust the top padding as needed */
+    padding-bottom: 50px;
+    background-color: black
+}
+.section1 img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.section2{
+    text-align: center;
+    padding-top: 50px; /* Adjust the top padding as needed */
+    padding-bottom: 50px;
+    background-color: #D6DA31
+}
+
+.section2 img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0; /* Adjust the padding around the image as needed */
+}
+
+.who-we-are {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #0E0E11;
+}
+
+.who-we-are img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 30px; /* Adjust spacing between image and text */
+}
+
+.who-we-are .description {
+    max-width: 50%;
+}
+
+.who-we-are h2 {
+    color: #FF5714;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.who-we-are p {
+    color: #CCCCCC;
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+@keyframes changeBg {
+    from{
+        background-color: black;
+    }
+    to {
+        background-color: #ffcc00;
+    }
+}
+
+footer {
+    background-color: black;
+    color: #2F52E0;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+}
