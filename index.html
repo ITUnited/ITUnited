@@ -3,38 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Events - ITUnited</title>
+    <link rel="stylesheet" href="stylesheet.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            animation: changeColor 5s infinite alternate;
+        body{
+            background-color: black;
+            text-align: center;
         }
-
         h1 {
-            font-size: 3rem;
             color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
-        @keyframes changeColor {
-            0% {
-                background-color: #f0f0f0;
-            }
-            50% {
-                background-color: #ffcc00;
-            }
-            100% {
-                background-color: #f0f0f0;
-            }
+        h2{
+            background: linear-gradient(to right, #D6DA31, #7D7F1D); /* Adjust the colors as needed */
+            -webkit-background-clip: text; /* Apply gradient to text */
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to ITUNited</h1>
+    <header>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="events.html">Events</a></p>
+        <p><a href="contact.html">Contact</a></p>
+    </header>
+
+    <section class="who-we-are" style="background: linear-gradient(to bottom, black, #242508);">
+        <img src="files\图片3.png">
+        <div class="description">
+            <h2>Language Café (exchange)🥐☕</h2>
+            <p>Main format will be centered around sharing simple phrases and characteristics of different languages surrounding a central theme pre-selected for that meeting of the week. The theme could be food, greetings, basic phrases to know when traveling, and other topics of interest. Participants should feel encouraged to contribute some short teachings based on their native languages, and of course have fun in expanding linguistic knowledge.</p>
+            <p>Join us today!</p>
+        </div>
+    </section>
+
+    <section class="who-we-are" style="background: linear-gradient(to bottom, #242508, #36370C);">
+        <img src="files\图片5.png">
+        <div class="description">
+            <h2>Movie Nights 🎥 </h2>
+            <p>We plan on organizing events regarding cinematography from around the world.  We can explore everything from French romances to Japanese anime but probably we will be avoiding Hollywood. The snacks will be provided and sometimes we can even order pizzas. Main goal of the event is to explore different cultural aspects of the movie industry.</p>
+            <p>Join us today!</p>
+        </div>
+    </section>
+
+    <section class="who-we-are" style="background: linear-gradient(to bottom, #36370C, #474910);">
+        <img src="files\图片7.png">
+        <div class="description">
+            <h2>Folk dances💃 🕺 </h2>
+            <p>Wanna share wild dance moves from your country and flex on everyone else? Neither do I, but if we find enough willing people we can organize an event and even provide prizes. We can also teach each other the dances and maybe perform it together.</p>
+            <p>Join us today!</p>
+        </div>
+    </section>
+
+    <section class="who-we-are" style="background: linear-gradient(to bottom, #474910, #36370C);">
+        <img src="files\图片4.png">
+        <div class="description">
+            <h2>Quiz and trivia events ❓ 🧠 </h2>
+            <p>Are you good at guessing flags, geography, playing GeoGuessr or you just enjoy guessing the language of a song? Then we might have the perfect place for you! The atmosphere of these quizzes is very laidback and with snacks to enjoy the day after school obligations.</p>
+            <p>Join us today!</p>
+        </div>
+    </section>
+
+    <section class="who-we-are" style="background: linear-gradient(to bottom, #36370C, black);">
+        <img src="files\food.png">
+        <div class="description">
+            <h2>Global cuisine 🍲 </h2>
+            <p>Are you curious about food from different cultures or maybe you're just hungry? We have an event just for that. The only requirement is to bring or make food from your own country for others to share 🫡 . You can also be reimbursed for the cost of products. </p>
+            <p>Join us today!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ITUnited. Alle rettigheder forbeholdes.</p>
+    </footer>
 </body>
 </html>
