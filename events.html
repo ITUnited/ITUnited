@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - ITUnited</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
     <style>
         body{
             background-color: black;
@@ -26,9 +27,32 @@
             color: #666;
             font-size: 1.2rem;
         }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
     </style>
 </head>
 <body>
+    <div class="banner" style="width: 100%; position: fixed;">
+        <p class="marquee">
+            <span> MEET AND GREET @ 16:00, JOIN US IN 3A18, PIZZA TRIVIA GLORY - </span>
+          </p>
+          <p class="marquee marquee2">
+            <span> MEET AND GREET @ 16:00, JOIN US IN 3A18, PIZZA TRIVIA GLORY - </span>
+          </p>
+    </div>
+
     <header>
         <p><a href="index.html">Home</a></p>
         <p><a href="about.html">About Us</a></p>
@@ -41,7 +65,7 @@
         <div class="description">
             <h2>Language Café (exchange)🥐☕</h2>
             <p>Main format will be centered around sharing simple phrases and characteristics of different languages surrounding a central theme pre-selected for that meeting of the week. The theme could be food, greetings, basic phrases to know when traveling, and other topics of interest. Participants should feel encouraged to contribute some short teachings based on their native languages, and of course have fun in expanding linguistic knowledge.</p>
-            <p>Join us today!</p>
+            <p class="join">Join us today!</p>
         </div>
     </section>
 
@@ -50,7 +74,7 @@
         <div class="description">
             <h2>Movie Nights 🎥 </h2>
             <p>We plan on organizing events regarding cinematography from around the world.  We can explore everything from French romances to Japanese anime but probably we will be avoiding Hollywood. The snacks will be provided and sometimes we can even order pizzas. Main goal of the event is to explore different cultural aspects of the movie industry.</p>
-            <p>Join us today!</p>
+            <p class="join">Join us today!</p>
         </div>
     </section>
 
@@ -59,7 +83,7 @@
         <div class="description">
             <h2>Folk dances💃 🕺 </h2>
             <p>Wanna share wild dance moves from your country and flex on everyone else? Neither do I, but if we find enough willing people we can organize an event and even provide prizes. We can also teach each other the dances and maybe perform it together.</p>
-            <p>Join us today!</p>
+            <p class="join">Join us today!</p>
         </div>
     </section>
 
@@ -68,7 +92,7 @@
         <div class="description">
             <h2>Quiz and trivia events ❓ 🧠 </h2>
             <p>Are you good at guessing flags, geography, playing GeoGuessr or you just enjoy guessing the language of a song? Then we might have the perfect place for you! The atmosphere of these quizzes is very laidback and with snacks to enjoy the day after school obligations.</p>
-            <p>Join us today!</p>
+            <p class="join">Join us today!</p>
         </div>
     </section>
 
@@ -77,7 +101,7 @@
         <div class="description">
             <h2>Global cuisine 🍲 </h2>
             <p>Are you curious about food from different cultures or maybe you're just hungry? We have an event just for that. The only requirement is to bring or make food from your own country for others to share 🫡 . You can also be reimbursed for the cost of products. </p>
-            <p>Join us today!</p>
+            <p class="join">Join us today!</p>
         </div>
     </section>
 
