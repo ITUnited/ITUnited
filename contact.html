@@ -69,6 +69,26 @@
             font-weight: bold;
         }
 
+        .contact-links ul li:hover{
+            animation: testcolor 0.5s infinite;
+        }
+
+        @keyframes testcolor {
+            0% {
+                color: #007bff;
+                text-shadow: 0 0 5px #D6DA31;
+                transform: scale(1) translate(0, 0) rotate(-1deg);
+            } 50% {
+                color: black;
+                text-shadow: 0 0 5px #007bff;
+                transform: scale(1.1) translate(2%, -15%) rotate(1deg);
+            } 100% {
+                color: #007bff;
+                text-shadow: 0 0 px #D6DA31;
+                transform: scale(1) translate(0, 0) rotate(-1deg);
+            }
+        }
+
         @keyframes changeColor {
             0% {
                 background-color: black;
