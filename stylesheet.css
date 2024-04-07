@@ -28,9 +28,31 @@ header p{
 }
 header p :hover{
     color: white;
-    text-shadow: 1px 1px 4px rgba(214, 218, 49,0.9), 0px 0px 10px rgba(214, 218, 49,0.9), 0px 0px 20px rgba(214, 218, 49,0.9);
-    transform: scale(1.1);
-    transition: 0.5s;
+    text-shadow: 1px 1px 4px rgba(214, 218, 49,0.9), 0px 0px 10px rgba(214, 218, 49,0.9);
+    animation: szoom 0.8s infinite;
+}
+
+@keyframes szoom {
+    0% {
+        transform: scale(1);
+    } 50%{
+        transform: scale(1.07);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shuffle {
+    0% {
+        transform: translate(0, 0%);
+    } 33%{
+        transform: translate(0, -25%);
+    } 67%{
+        transform: translate(0, -10%);
+    }
+     100% {
+        transform: translate(0%);
+    }
 }
 
 .marquee {
@@ -130,10 +152,37 @@ header p :hover{
     font-size: 2rem;
     margin-bottom: 20px;
 }
+.who-we-are h2:hover{
+    animation: shuffle 0.5s infinite;
+}
 
 .who-we-are p {
     color: #CCCCCC;
     font-size: 1.1rem;
+}
+
+.who-we-are img{
+    transition: 1s;
+}
+
+.who-we-are img:hover{
+    /* animation-duration: rotation, zooom;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: infinite, infinite; */
+    animation: zooom 0.5s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zooom {
+    0% {
+        transform: scale(1) rotate(0deg);
+    } 25%{
+        transform: scale(1.2) rotate(365deg);
+    } 75%{
+        transform: scale(1.2) rotate(365deg);
+    } 100%{
+        transform: scale(1) rotate(2deg);
+    }
 }
 
 h2 {
